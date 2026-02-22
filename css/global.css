@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+html {
+    overflow-y:scroll;
+}
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:1em;
+    color:#444444;
+}
+
+h1, h2, h3 {
+    font-weight:400;
+    padding-top:10px;
+}
+
+/* style des liens */
+a, button {
+    text-decoration: none;
+}
+
+/*--------------------MENU LATÉRAL--------------------*/
+
+nav {
+    font-family: "Montserrat", sans-serif;
+    position:fixed;
+    top:0;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items : flex-end;
+    text-align: right;
+    background : linear-gradient(#380c0f,#732027);
+    font-size: 0.7em;
+    padding:30px;
+    width:15vw;
+}
+nav a, nav span {
+    color:#9d9191;
+}
+nav a:hover{
+    color:#fecf9a;
+}
+nav h2{
+    font-size:1.2em;
+}
+/* calage de l'icône étoile */
+nav i:not(#triangle){
+    font-size:0.7em;
+    position: relative;
+    bottom: 3px;
+}
+nav hr{
+    width: 180px;
+    color:#fecf9a;
+}
+button {
+    color:#9d9191;
+    background-color: transparent;
+    border:none;
+    text-align:inherit;
+    padding:0;
+    width:fit-content;
+}
+.logo {
+    max-width:100%;
+    height:auto;
+    margin-bottom:10px;
+}
+.pageactuelle {
+    font-size:1.4em;
+    color:#fecf9a;
+}
+.navigationIndex a:hover, button:hover, .stripActuel, .tomeActuel{
+    color:#fecf9a;
+}
+
+.navigationIndex {
+    display:flex;
+    flex-direction: column;
+    align-items : end;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.credits {
+    color:#380c0f;
+    position: absolute;
+    bottom:0;
+    padding-bottom: 30px;
+}
+/* animation des liens au survol */
+#lecture:not(.pageactuelle):hover, #personnages:not(.pageactuelle):hover, #galerie:not(.pageactuelle):hover, #apropo:not(.pageactuelle):hover, #boutique:not(.pageactuelle):hover, .index, #index:hover {
+    font-size:1.1em;
+    color:#fecf9a;
+}
+#lecture:not(.pageactuelle), #personnages:not(.pageactuelle), #galerie:not(.pageactuelle), #apropo:not(.pageactuelle), #boutique:not(.pageactuelle), #index{
+    transition: 0.2s ease;    
+}
+
+#dernierStrip{
+    margin-top:10px;
+    margin-bottom:10px;
+    transition: 0.2s ease;
+}
+#lecture{
+    margin-bottom:-10px;
+}
+
+/*--------------------CONTENU CENTRAL--------------------*/
+
+main {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    max-width:900px;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1, main h2, main h3, main span, #footerSmartphone {
+    color:#722026;
+}
+.conteneur{
+      user-select: none;
+
+}
+
+/*--------------------FOOTER--------------------*/
+
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding:0px 20px 20px 0px;
+    display : flex;
+    justify-content: right;
+}
+
+/*--------------------IMAGE DE FOND--------------------*/
+
+#image2fond {
+    position: fixed;
+    z-index:-2;
+    top:0;
+    bottom:0;
+    width: 100%;
+    opacity:0.5;
+    filter: grayscale();
+    background-image: url('../images/deco/cover.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* --------------------RESPONSIF-------------------- */
+
+#masque{
+    display:none;
+    position: fixed;
+    z-index: -1;
+    top:0;
+    width: 100vw;
+    height: 200px;
+    background :white;
+}
+
+/* TOP MENU */
+.menuSmartphone{
+    display:none;
+    position: fixed;
+    top:0;
+    height: 45px;
+    width: 100vw;
+    padding:10px 20px;
+    color:#9d9191;
+    background : linear-gradient(to right,#380c0f,#732027);  
+}
+.menuSmartphone div{
+    width:fit-content;
+}
+.menuSmartphone a, .menuGlissant a{
+    display: block;
+    color:#9d9191;
+}
+.menuSmartphone a:active, .menuSmartphone i:active .menuGlissant a:active{
+    color:#fecf9a;
+}
+.menuSmartphone i {
+    font-size:1em;
+    margin-right:20px;
+}
+
+.menuSmartphone img{
+    display: block;
+    height:20px;
+    margin-left:8px;
+}
+.actuel{
+    color:#fecf9a;
+}
+.droite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* compteur de strips */
+#lectureSmartphone{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:1em;
+}
+#lectureSmartphone i{
+    font-size:0.8em;
+    position: relative;
+    bottom:0.08em;
+    margin-right:3px;
+}
+
+/* NAVIGATION STRIPS */
+#footerSmartphone{
+    display:none;
+    cursor: pointer;
+    height:40px;
+    width:100%;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+    padding:5px 10px;
+    font-size: 0.8em;
+    bottom:0;
+}
+#footerSmartphone img{
+    height: 15px;
+}
+
+/* MENU LATÉRAL */
+.menuGlissant{
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    /* background : linear-gradient(to bottom,#380c0f,75%,#732027); */
+    background : radial-gradient(circle at top right, #380c0f,45%, #732027);
+    overflow-x: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menuGlissant hr{
+    color:#fecf9a;    
+    width:70%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.menuGlissant div{
+    padding : 40px 15px 40px 15px;
+}
+
+.menuGlissant a {
+    padding: 15px 0px 15px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    transition: 0.2s;
+}
+.bas{
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    /* border:1px solid red; */
+}
+
+/* Position and style the close button (top right corner) */
+.menuGlissant .closebtn {
+    color:#fecf9a;    
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.2em;
+}
+
+/* calage des icônes */
+.menuGlissant i:not(.closebtn){
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+}
+
+/* -------------------- GESTION DES AFFICHAGES -------------------- */
+
+ /* En-dessous de 1200 px */
+@media screen and (max-width: 1200px) {
+    main {
+        max-width: 80%;
+        margin-top:45px;
+    }
+    nav, footer{
+        display:none;
+    }
+    .menuSmartphone{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+
+}
+/* En-dessous de 800 px */
+@media screen and (max-width: 800px) {
+    main {
+        max-width: 100%;
+    }
+    .conteneur{
+        margin-bottom:30px;
+    }
+    #masque{
+        display: block;
+    }
+}

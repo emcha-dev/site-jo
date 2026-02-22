@@ -1,0 +1,80 @@
+#couv{
+    height:100vh;
+    object-fit: cover;
+    user-select: none;
+}
+#strip {
+    max-width:100%;
+    height:auto;
+    user-select: none;
+}
+
+/* FLECHES DE NAVIGATION */
+.conteneur {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.conteneur div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    height: 100%;
+    /* border:1px solid red; */
+}
+.conteneur img{
+    display:block;
+}
+.conteneur div img {
+    position: fixed;
+    top:33%;
+    user-select: none;
+}
+#suivant{
+    position:absolute;
+    top:0;
+    right:0;
+    align-items: flex-end;
+    opacity:0;
+    transition:0.3s;
+}
+#precedent {
+    position:absolute;
+    top:0;
+    left:0;
+    align-items: flex-start;
+    opacity:0;
+    transition:0.3s;
+}
+#suivant:hover {
+    opacity:1;
+}
+#precedent:hover {
+    opacity:1;
+}
+
+
+/* --------------------RESPONSIF-------------------- */
+
+
+/* En-dessous de 800 px */
+@media screen and (max-width: 800px) {
+    main{
+        min-height:100vh;
+    }
+    /* largeur des couvertures */
+    #couv{
+        width:100vw;
+        height: auto;
+        margin-top:-100px;
+    }
+    /* pas de flèches de navigation */
+    #suivant img, #precedent img{
+        display: none;
+    }
+    /* affichage du menu de navigation en bas de l'écran */
+    #footerSmartphone{
+        display:flex;
+    }
+}

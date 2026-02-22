@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(19, 3, 3);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:1em;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:50px 100px 0px 100px;
+}
+h1{
+    font-weight: 300;
+}
+.autrices {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    color:#fecf9a;
+    margin-bottom:40px;
+    /* border:1px solid red; */
+}
+.conteneur {
+    display: flex;
+    width:fit-content;
+    margin: auto;
+    /* border:1px solid red; */
+}
+img{
+    max-width: 100%;
+    max-height: 55vh;
+}
+.colonne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:1px solid blue; */
+}
+.langues{
+    z-index:1;
+    width:120%;
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid red; */
+}
+.langues img {
+    display: block;
+    max-height: 8vh;
+    border-radius: 6px;
+    transition: 0.1s ease;
+}
+.langues img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding : 50px 100px;
+    color:#fecf9a;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background : linear-gradient(to bottom, transparent, 40%,#000000);
+}
+footer div{
+    width:100%;
+    /* border:1px solid greenyellow; */
+}
+p {
+    color:#722026;
+}
+
+.image2fond {
+    /*div qui prend tout l'espace de l'élément parent*/
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+    height: auto;
+    /*réglages opacité et position z*/
+    background-image: url('../images/deco/cover.jpg');
+    background-size : cover;
+    opacity:0.4;
+    z-index:-1;
+}
+
+@media screen and (max-width: 1200px){
+    footer{
+        /* border:1px solid red; */
+        position: relative;
+        padding:50px 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 1.5em;
+    }
+    main{
+        padding:30px 30px;
+        /* margin-bottom:20px; */
+    }
+    .image2fond{
+        background-position:top;
+    }
+    footer{
+        /* position: relative; */
+        flex-direction: column;
+        padding:30px 0px;
+        /* background-color: black; */
+    }
+    footer p{
+        margin-bottom:15px;
+    }
+    .langues{
+        margin-top:20px;
+        width:90%;
+    }
+    .langues img{
+        max-height: 7vh;
+    }
+    
+}

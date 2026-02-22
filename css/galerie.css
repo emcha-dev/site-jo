@@ -1,0 +1,193 @@
+main {
+    padding:20px 80px 60px 80px;
+}
+main h1{
+    width:100%;
+    text-align: left;
+    margin:30px 0px 40px 0px;
+    /* border: 1px solid red; */
+
+}
+.grille {
+    display:flex;
+    flex-wrap: wrap;
+    max-width:100%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.grille img {
+    display:block;
+    border-radius: 10px;
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+  }
+.grille span {
+    cursor:pointer;
+    position:relative;
+}
+.grille span:hover .voir{
+    opacity:1;
+  }
+  .voir {
+    opacity:0;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    color:#fecf9a;
+    background-color: rgba(0, 0, 0,0.5);
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------- */
+
+/* VISIONNEUSE */
+.calqueNoir {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom:0;
+  top: 0;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0, 0, 0,0.7);
+}
+
+/* CONTENU VISIONNEUSE */
+.contenuVisionneuse {
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+    height:100vh;
+    position: relative;
+    /* border:1px solid red; */
+  }  
+ #imageHD{
+    position: relative;
+    margin:auto;
+    max-height:98vh;
+    display:block;
+  }
+
+  /* BOUTON FERMER */
+  .close {
+    position: absolute;
+    top: 1vh;
+    right:2vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index:2;
+    color:#fecf9a;
+    /* border:1px solid blue; */
+  }  
+  .close:hover,
+  .close:focus {
+    color:#722026;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/* FLECHES PRECEVENT/SUIVANT */
+.fleches{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    bottom:0;
+    width:100%;
+    /* border:1px solid rgb(60, 185, 60); */
+}
+.avant, .apres{
+  cursor: pointer;
+  position: fixed;
+  display:flex;
+  align-items: center;
+  top:0;
+  bottom:0;
+  width: 15vw;
+  transition: 0.3s ease;
+  user-select: none;
+  opacity:0;
+  z-index:2;
+}
+
+.avant{
+  background : linear-gradient(to right, #00000000,#00000000);
+  justify-content: flex-start;
+  padding: 16px;  
+}
+.apres {
+  background : linear-gradient(to left, #00000000,#00000000);
+  justify-content: flex-end;
+  right:0;
+  padding: 16px 16px 16px 0px;
+
+}
+/* On hover, add a black background color with a little bit see-through */
+.apres:hover {
+  opacity:1;
+  background : linear-gradient(to left, #000000c0,#00000000);
+}
+.avant:hover {
+  opacity:1;
+  background : linear-gradient(to right, #000000c0,#00000000);
+}
+.flchG{
+  visibility: hidden;
+  position:fixed;
+  bottom: 0;
+  height: 15px;
+  z-index: 2;
+}
+.flchD{
+  visibility: hidden;
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  height: 15px;
+  z-index: 2;
+
+}
+
+
+/* -------------------RESPONSIF------------------- */
+
+@media screen and (max-width: 1200px) {
+    .apres img, .avant img {
+      display: none;
+    }
+    #imageHD{
+      max-width:100vw;
+      height: auto;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    main{
+      padding: 0px 20px 60px 20px;
+    }
+    main h1{
+      text-align: center;
+    }
+    .grille{
+      width:90%;
+    }
+    .grille img {
+        /* border:1px solid red; */
+        width:90px !important;
+    }
+    .apres:hover, .avant:hover{
+      background: transparent;
+    }
+    .flchD, .flchG{
+      visibility: visible;
+    }
+}
+

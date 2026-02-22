@@ -1,0 +1,115 @@
+/* table, td{
+    border : 1px solid red;
+} */
+main {
+    padding:60px 0px;
+}
+h3{
+    font-size:1.4em;
+}
+a{
+    color:#722026;
+}
+a:hover{
+    color:#fecf9a;
+}
+strong{
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.3;
+    color:#444444;
+}
+strong:hover{
+    color:#444444;
+}
+p{
+    margin:10px 0 0 0;
+}
+.titres{
+    width:100%;
+    padding:0px 0px 20px 0px;
+    text-align: center;
+}
+.titres img, .titres a img {
+    height:40px;
+    object-fit: contain;
+}
+
+.ligne{
+    /* border:1px solid deeppink; */
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.fourberie1, .fourberie2{
+    opacity:0;
+}
+#ecwid{
+    width:90%;
+}
+#lulu, #gumroad{
+    margin-bottom: 50px;
+}
+
+.vignette{
+    width:260px;
+    height:260px;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.2s ease;
+    filter:brightness(97%);
+}
+#lulu div, #gumroad div{
+    text-align: center;
+}
+#lulu div:hover .vignette, #gumroad div:hover .vignette{
+    background-size: 110%;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+#t1{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/vol_01_lulu.jpg");
+}
+#t2{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/vol_02_lulu.jpg");
+}
+#t3{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/vol_03_lulu.jpg");
+}
+#t4{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/vol_04_lulu.jpg");
+}
+#t5{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/vol_05_lulu.jpg");
+}
+#mnb{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/MNB_LULU_sm.jpg");
+}
+#pdf{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/PDF.jpg");
+}
+#mnbpdf{
+    background-image: url("https://klaimsden.net/jackpot/jo/shop/MNB_PDF_GR.jpg");
+}
+
+
+/* -------------------RESPONSIF------------------- */
+
+@media screen and (max-width: 1200px) {
+    main{
+        padding: 30px 0px 60px 0px;
+    }
+    .fourberie2{
+        display:none;
+    }  
+}
+
+@media screen and (max-width: 800px) {
+    .fourberie1{
+        display:none;
+    }
+}
