@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <title>JO - index</title>
+    <link rel="shortcut icon" href="images/deco/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--TYPOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css?ver=6.8.2" type="text/css" media="all">      
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/indexSmartphone.css">
+    <!-- JAVASCRIPT -->
+    <script src="javascript/config.js" defer></script>
+    <script src="javascript/indexSmartphone.js" defer></script>
+
+ </head>
+ <!-- BODY -->
+ <body>
+   <!--CONTENU-->
+    <main>
+      <div class="index">
+          <h1>
+            Index
+          </h1>
+          <span>
+              <a onclick="(recuperation(0))" href="lecture.html">tome 1
+          </span>
+          <p>
+            <a onclick="(recuperation(1))" href="lecture.html">01</a> -
+            <a onclick="(recuperation(2))" href="lecture.html">02</a> -
+            <a onclick="(recuperation(3))" href="lecture.html">03</a> -
+            <a onclick="(recuperation(4))" href="lecture.html">04</a> -
+            <a onclick="(recuperation(5))" href="lecture.html">05</a> -
+            <a onclick="(recuperation(6))" href="lecture.html">07</a> -
+            <a onclick="(recuperation(8))" href="lecture.html">08</a> -
+            <a onclick="(recuperation(9))" href="lecture.html">09</a> -
+            <a onclick="(recuperation(10))" href="lecture.html">10</a> -
+            <a onclick="(recuperation(11))" href="lecture.html">12</a> -
+            <a onclick="(recuperation(13))" href="lecture.html">13</a> -
+            <a onclick="(recuperation(14))" href="lecture.html">14</a> -
+            <a onclick="(recuperation(15))" href="lecture.html">15</a>
+          </p>
+          <span>
+              <a onclick="(recuperation(16))" href="lecture.html">tome 2</a>
+          </span>
+          <p id="vol2">
+          </p>
+          <span>
+              <a onclick="(recuperation(32))" href="lecture.html">tome 3</a>
+          </span>
+          <p id="vol3">
+          </p>
+          <span>
+              <a onclick="(recuperation(48))" href="lecture.html">tome 4</a>
+          </span>
+          <p id="vol4">
+          </p>
+          <span>
+              <a onclick="(recuperation(64))" href="lecture.html">tome 5</a>
+          </span>
+          <p id="vol5">
+          </p>
+          <span>
+              <a onclick="(recuperation(80))" href="lecture.html">tome 6</a>
+          </span>
+          <p id="vol6">
+          </p>
+        </div>
+
+    </main>
+    
+    <!-- MENU SMARTPHONE -->
+    <div class="menuSmartphone">
+      <div>
+        <i onclick="openNav()" class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bookmark actuel"></i>
+      </div>
+      <div class="droite">
+        <div>
+          <a class="fr" href="lecture.html">retour lecture</a>
+          <a class="en" href="lecture.html">back to strips</a>
+        </div>
+        <a href="index.html"><img class="fr" src="images/deco/fr-circular.png"></a>
+        <a href="index.html"><img class="en" src="images/deco/uk-circular.png"></a>
+      </div>  
+    </div>
+
+    <!-- MENU GLISSANT -->
+    <div class="menuGlissant">
+        <div>
+          <a href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark closebtn"></i></a>
+          <a onclick="closeNav()" href="a-propos.html"><i class="fa-solid fa-question"></i> À PROPOS</a>
+          <a onclick="closeNav()" href="indexSmartphone.html"><i class="fa-solid fa-bookmark actuel"></i> INDEX </a>
+          <a onclick="closeNav()" href="personnages.html"><i class="fa-solid fa-hat-cowboy"></i> PERSONNAGES</a>
+          <a onclick="closeNav()" href="galerie.html"><i class="fa-solid fa-images"></i> GALERIE</a>
+          <a onclick="closeNav()" href="boutique.html"><i class="fa-solid fa-cart-shopping"></i> BOUTIQUE</a>
+          <hr>
+        </div>
+        <div class="credits bas">
+          <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>JackPot & Soyouz 2012 - 2022
+        </div>
+    </div>             
+
+   <!-- javascript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+ </body>
+ </html>

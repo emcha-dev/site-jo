@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <title>JO - galerie</title>
+    <link rel="shortcut icon" href="images/deco/favicon.ico" type="image/x-icon">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--TYPOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css?ver=6.8.2" type="text/css" media="all">  
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <!-- JAVASCRIPT -->
+    <script src="javascript/config.js" defer></script>     
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/galerie.js" defer></script>
+    <script src="javascript/indexPages.js" defer></script>
+ </head>
+ 
+ <!-- BODY -->
+ <body>
+
+	 <!--MENU LATÉRAL -->
+    <nav>
+      <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>
+
+      <hr>
+
+      <!-- retour début -->
+      <a onclick="(resetIndice())" href="lecture.html" id="lecture"><h2 class="fr"><i id="triangle" class="fa-solid fa-caret-right"></i> DÉBUT</h2><h2 class="en"><i id="triangle" class="fa-solid fa-caret-right"></i> START</h2></a>
+
+      <!-- index pages -->
+      <a id="index" onclick="(index())" href="#listeIndex" data-bs-toggle="collapse" aria-expanded="false" aria-controls="listeIndex">
+        <h2>Index</h2>
+      </a>
+      <div class ="navigationIndex collapse" id="listeIndex">
+        <button id="1" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T1" aria-expanded="false" aria-controls="T1">tome 1</button>
+        
+        <div class="collapse" id="T1">
+            <a href="lecture.html" id="0">couverture</a><br>
+            <a href="lecture.html">01</a> - <a href="lecture.html">02</a> - <a href="lecture.html">03</a> - <a href="lecture.html">04</a> - <a href="lecture.html">05</a><br>
+            <a href="lecture.html">06</a> - <a href="lecture.html">07</a> - <a href="lecture.html">08</a> - <a href="lecture.html">09</a> - <a href="lecture.html">10</a><br>
+            <a href="lecture.html">11</a> - <a href="lecture.html">12</a> - <a href="lecture.html">13</a> - <a href="lecture.html">14</a> - <a href="lecture.html">15</a>
+        </div>
+        
+        <button id="2" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T2" aria-expanded="false" aria-controls="T2">tome 2</button>
+        
+        <div class="collapse" id="T2">
+            <a href="lecture.html" id="16">couverture</a><br>
+            <a href="lecture.html">16</a> - <a href="lecture.html">17</a> - <a href="lecture.html">18</a> - <a href="lecture.html">19</a> - <a href="lecture.html">20</a><br>
+            <a href="lecture.html">21</a> - <a href="lecture.html">22</a> - <a href="lecture.html">23</a> - <a href="lecture.html">24</a> - <a href="lecture.html">25</a><br>
+            <a href="lecture.html">26</a> - <a href="lecture.html">27</a> - <a href="lecture.html">28</a> - <a href="lecture.html">29</a> - <a href="lecture.html">30</a>
+        </div>
+        
+        <button id="3" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T3" aria-expanded="false" aria-controls="T3">tome 3</button>
+        
+          <div class="collapse" id="T3">
+            <a href="lecture.html" id="32">couverture</a><br>            
+            <a href="lecture.html">31</a> - <a href="lecture.html">32</a> - <a href="lecture.html">33</a> - <a href="lecture.html">34</a> - <a href="lecture.html">35</a><br>
+            <a href="lecture.html">36</a> - <a href="lecture.html">37</a> - <a href="lecture.html">38</a> - <a href="lecture.html">39</a> - <a href="lecture.html">40</a><br>
+            <a href="lecture.html">41</a> - <a href="lecture.html">42</a> - <a href="lecture.html">43</a> - <a href="lecture.html">44</a> - <a href="lecture.html">45</a>
+          </div>
+
+        <button id="4" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T4" aria-expanded="false" aria-controls="T4">tome 4</button>
+        
+          <div class="collapse" id="T4">
+            <a href="lecture.html" id="48">couverture</a><br>            
+            <a href="lecture.html">46</a> - <a href="lecture.html">47</a> - <a href="lecture.html">48</a> - <a href="lecture.html">49</a> - <a href="lecture.html">50</a><br>
+            <a href="lecture.html">51</a> - <a href="lecture.html">52</a> - <a href="lecture.html">53</a> - <a href="lecture.html">54</a> - <a href="lecture.html">55</a><br>
+            <a href="lecture.html">56</a> - <a href="lecture.html">57</a> - <a href="lecture.html">58</a> - <a href="lecture.html">59</a> - <a href="lecture.html">60</a>                
+          </div>
+
+        <button id="5" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T5" aria-expanded="false" aria-controls="T5">tome 5</button>
+        
+          <div class="collapse" id="T5">
+            <a href="lecture.html" id="64">couverture</a><br>            
+            <a href="lecture.html">61</a> - <a href="lecture.html">62</a> - <a href="lecture.html">63</a> - <a href="lecture.html">64</a> - <a href="lecture.html">65</a><br>
+            <a href="lecture.html">66</a> - <a href="lecture.html">67</a> - <a href="lecture.html">68</a> - <a href="lecture.html">69</a> - <a href="lecture.html">70</a><br>
+            <a href="lecture.html">71</a> - <a href="lecture.html">72</a> - <a href="lecture.html">73</a> - <a href="lecture.html">74</a> - <a href="lecture.html">75</a>                
+          </div>
+
+        <button id="6" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T6" aria-expanded="false" aria-controls="T6">tome 6</button>
+        
+          <div class="collapse" id="T6">
+            <a href="lecture.html" id="80">couverture</a><br>            
+            <a href="lecture.html">76</a> - <a href="lecture.html">77</a> - <a href="lecture.html">78</a> - <a href="lecture.html">79</a> - <a href="lecture.html">80</a><br>
+            <a href="lecture.html">81</a> - <a href="lecture.html">82</a> - <a href="lecture.html">83</a> - <a href="lecture.html">84</a> - <a href="lecture.html">85</a><br>
+            <a href="lecture.html">86</a> - <a href="lecture.html">87</a> - <a href="lecture.html">88</a> - <a href="lecture.html">89</a> - <a href="lecture.html">90</a><br>
+            <a href="lecture.html">91</a> - <a href="lecture.html">92</a> - <a href="lecture.html">93</a> - <a href="lecture.html">94</a> - <a href="lecture.html">95</a>
+          </div>          
+      </div>    
+      
+      <!-- dernier strip vu -->
+      <a href="lecture.html" id="dernierStrip"></a>
+
+      <hr>
+      
+      <a href="galerie.html" id="galerie"></a>
+      
+      <a href="personnages.html"id="personnages"></a>  
+
+      <a href="a-propos.html" id="apropo"></a>
+
+      <a href="boutique.html" id="boutique"></a>
+      
+      <div class="credits">
+        <hr>
+        JackPot & Soyouz 2012 - 2022
+      </div>
+    </nav>
+   <!--CONTENU-->
+    <div id="image2fond"></div>
+    <main>
+      <h1>Illustrations</h1>
+      <div id="illus" class="grille">
+      </div>
+      <h1>Joctober (2023)</h1>
+      <div id="joctober" class="grille">
+
+    </main>
+    
+    <!-- VISIONNEUSE -->
+    <div id="visionneuse" class="calqueNoir">
+      <!-- flèches -->
+      <div class="fleches">
+        <a onclick="ensuite(-1)">
+          <img class="flchG" src="images/deco/arrow_left_sm.png">
+          <div class="avant">
+            <img src="images/deco/arrow_left.png">
+          </div>
+        </a>
+        <a onclick="ensuite(1)">
+          <img class="flchD" src="images/deco/arrow_right_sm.png">
+          <div class="apres" >
+            <img src="images/deco/arrow_right.png">
+          </div>
+        </a>
+      </div>
+      <!-- images HD -->
+      <div class="contenuVisionneuse">
+        <span class="close cursor" onclick="fermerVisionneuse()"><i class="fa-solid fa-xmark"></i></span>
+        <img id="imageHD" src="">
+     </div>
+    </div>
+    
+    <!--FOOTER-->
+    <footer>
+      <div class="fr">
+        <img src="images/deco/fr-circular.png">
+        <a href="https://www.webtoons.com/fr/challenge/jo/list?title_no=452676"><img src="images/deco/webtoon-icon.png"></a>
+      </div>
+      <div class="en">
+        <img src="images/deco/uk-circular.png">
+        <a href="https://tapas.io/series/jo-webcomic"><img src="images/deco/tapas-icon.png"></a>        
+        <a href="https://www.webtoons.com/en/challenge/jo/list?title_no=393890"><img src="images/deco/webtoon-icon.png"></a>
+      </div>      
+    </footer>
+    
+    <!-- MENU SMARTPHONE -->
+    <div class="menuSmartphone">
+      <div>
+        <i onclick="openNav()" class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-images actuel"></i>
+      </div>
+      <div class="droite">
+        <div>
+          <a class="fr" href="lecture.html">retour lecture</a>
+          <a class="en" href="lecture.html">back to strips</a>
+        </div>
+        <a href="index.html"><img class="fr" src="images/deco/fr-circular.png"></a>
+        <a href="index.html"><img class="en" src="images/deco/uk-circular.png"></a>
+      </div>      
+    </div> 
+
+    <!-- MENU GLISSANT -->
+    <div class="menuGlissant">
+        <div>
+          <a href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark closebtn"></i></a>
+          <a onclick="closeNav()" href="a-propos.html"><i class="fa-solid fa-question"></i> À PROPOS</a>
+          <a onclick="closeNav()" href="indexSmartphone.html"><i class="fa-solid fa-bookmark"></i> INDEX </a>
+          <a onclick="closeNav()" href="personnages.html"><i class="fa-solid fa-hat-cowboy"></i> PERSONNAGES</a>
+          <a onclick="closeNav()" href="galerie.html"><i class="fa-solid fa-images actuel"></i> GALERIE</a>
+          <a onclick="closeNav()" href="boutique.html"><i class="fa-solid fa-cart-shopping"></i> BOUTIQUE</a>
+          <hr>
+        </div>
+        <div class="credits bas">
+          <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>JackPot & Soyouz 2012 - 2022
+        </div>
+    </div>           
+
+   <!-- javascript Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  </body>
+ </html>

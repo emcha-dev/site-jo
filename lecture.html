@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <title>JO - lecture</title>
+    <link rel="shortcut icon" href="images/deco/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--TYPOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css?ver=6.8.2" type="text/css" media="all">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/lecture.css">
+    <!-- JAVASCRIPT -->
+    <script src="javascript/config.js" defer></script>
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/lecture.js" defer></script>
+ </head>
+
+ <!-- BODY -->
+ <body>
+
+	 <!--MENU LATÉRAL -->
+    <nav>      
+      <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>
+      
+      <hr>
+
+      <!-- compteur -->
+      <span class="pageactuelle" id="lecture"><h2></h2></span>
+      
+      <!-- index pages -->
+      <a id="index" onclick="(index())" href="#listeIndex" data-bs-toggle="collapse" aria-expanded="false" aria-controls="listeIndex">
+        <h2>Index</h2>
+      </a>
+      <div class ="navigationIndex collapse" id="listeIndex">
+        <button id="1" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T1" aria-expanded="false" aria-controls="T1">tome 1</button>
+        
+        <div class="collapse" id="T1">
+            <a href="#" id="0">couverture</a><br>
+            <a href="#">01</a> - <a href="#">02</a> - <a href="#">03</a> - <a href="#">04</a> - <a href="#">05</a><br>
+            <a href="#">06</a> - <a href="#">07</a> - <a href="#">08</a> - <a href="#">09</a> - <a href="#">10</a><br>
+            <a href="#">11</a> - <a href="#">12</a> - <a href="#">13</a> - <a href="#">14</a> - <a href="#">15</a>
+        </div>
+        
+        <button id="2" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T2" aria-expanded="false" aria-controls="T2">tome 2</button>
+        
+        <div class="collapse" id="T2">
+            <a href="#" id="16">couverture</a><br>
+            <a href="#">16</a> - <a href="#">17</a> - <a href="#">18</a> - <a href="#">19</a> - <a href="#">20</a><br>
+            <a href="#">21</a> - <a href="#">22</a> - <a href="#">23</a> - <a href="#">24</a> - <a href="#">25</a><br>
+            <a href="#">26</a> - <a href="#">27</a> - <a href="#">28</a> - <a href="#">29</a> - <a href="#">30</a>
+        </div>
+        
+        <button id="3" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T3" aria-expanded="false" aria-controls="T3">tome 3</button>
+        
+          <div class="collapse" id="T3">
+            <a href="#" id="32">couverture</a><br>            
+            <a href="#">31</a> - <a href="#">32</a> - <a href="#">33</a> - <a href="#">34</a> - <a href="#">35</a><br>
+            <a href="#">36</a> - <a href="#">37</a> - <a href="#">38</a> - <a href="#">39</a> - <a href="#">40</a><br>
+            <a href="#">41</a> - <a href="#">42</a> - <a href="#">43</a> - <a href="#">44</a> - <a href="#">45</a>
+          </div>
+
+        <button id="4" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T4" aria-expanded="false" aria-controls="T4">tome 4</button>
+        
+          <div class="collapse" id="T4">
+            <a href="#" id="48">couverture</a><br>            
+            <a href="#">46</a> - <a href="#">47</a> - <a href="#">48</a> - <a href="#">49</a> - <a href="#">50</a><br>
+            <a href="#">51</a> - <a href="#">52</a> - <a href="#">53</a> - <a href="#">54</a> - <a href="#">55</a><br>
+            <a href="#">56</a> - <a href="#">57</a> - <a href="#">58</a> - <a href="#">59</a> - <a href="#">60</a>                
+          </div>
+
+        <button id="5" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T5" aria-expanded="false" aria-controls="T5">tome 5</button>
+        
+          <div class="collapse" id="T5">
+            <a href="#" id="64">couverture</a><br>            
+            <a href="#">61</a> - <a href="#">62</a> - <a href="#">63</a> - <a href="#">64</a> - <a href="#">65</a><br>
+            <a href="#">66</a> - <a href="#">67</a> - <a href="#">68</a> - <a href="#">69</a> - <a href="#">70</a><br>
+            <a href="#">71</a> - <a href="#">72</a> - <a href="#">73</a> - <a href="#">74</a> - <a href="#">75</a>                
+          </div>
+
+        <button id="6" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T6" aria-expanded="false" aria-controls="T6">tome 6</button>
+        
+          <div class="collapse" id="T6">
+            <a href="#" id="80">couverture</a><br>            
+            <a href="#">76</a> - <a href="#">77</a> - <a href="#">78</a> - <a href="#">79</a> - <a href="#">80</a><br>
+            <a href="#">81</a> - <a href="#">82</a> - <a href="#">83</a> - <a href="#">84</a> - <a href="#">85</a><br>
+            <a href="#">86</a> - <a href="#">87</a> - <a href="#">88</a> - <a href="#">89</a> - <a href="#">90</a><br>
+            <a href="#">91</a> - <a href="#">92</a> - <a href="#">93</a> - <a href="#">94</a> - <a href="#">95</a>
+          </div>          
+      </div>
+      
+      <!-- dernier strip vu -->
+      <a href="lecture.html" id="dernierStrip"></a>  
+
+      <hr>
+
+      <a href="personnages.html"id="personnages">
+        <h2 class="fr">PERSONNAGES</h2><h2 class="en">CAST</h2>
+      </a> 
+ 
+      <a href="galerie.html" id="galerie">
+        <h2 class="fr">GALERIE</h2><h2 class="en">GALLERY</h2>
+      </a>
+
+      <a href="a-propos.html" id="apropo">
+        <h2 class="fr">À PROPOS</h2><h2 class="en">ABOUT</h2>
+      </a>
+
+      <a href="boutique.html" id="boutique">
+        <h2 class="fr">BOUTIQUE</h2><h2 class="en">SHOP</h2>
+      </a>
+
+      <div class="credits">
+        <hr>
+        JackPot & Soyouz 2012 - 2022
+      </div>
+    </nav>
+
+   <!--CONTENU-->
+   <main>
+     <!--navigation-->
+     <div class="conteneur">
+       <img id="strip">
+       <img id="couv">
+       
+       <a href="#">
+         <div id="precedent">
+           <img src="images/deco/arrow_left.png">
+          </div>
+        </a>
+        <a href="#">
+          <div id="suivant">
+            <img src="images/deco/arrow_right.png">
+          </div>
+        </a>
+      </div>
+      
+      
+    </main>
+    
+    <div id="masque"></div>
+    <div id="image2fond"></div>
+    
+    <!--FOOTER-->
+    <footer>
+      <div class="fr">
+        <img src="images/deco/fr-circular.png">
+        <a href="https://www.webtoons.com/fr/challenge/jo/list?title_no=452676"><img src="images/deco/webtoon-icon.png"></a>
+      </div>
+      <div class="en">
+        <img src="images/deco/uk-circular.png">
+        <a href="https://tapas.io/series/jo-webcomic"><img src="images/deco/tapas-icon.png"></a>        
+        <a href="https://www.webtoons.com/en/challenge/jo/list?title_no=393890"><img src="images/deco/webtoon-icon.png"></a>
+      </div>      
+    </footer>
+    
+    <!-- MENUS SMARTPHONE -->
+
+    <!-- TOP MENU -->
+    <div class="menuSmartphone">
+      <div>
+        <i onclick="openNav()" class="fa-solid fa-bars"></i>
+      </div>
+      <!-- emplacement du compteur -->
+      <div class="droite">
+        <div id="lectureSmartphone">
+        </div>
+        <a href="index.html"><img class="fr" src="images/deco/fr-circular.png"></a>
+        <a href="index.html"><img class="en" src="images/deco/uk-circular.png"></a>
+      </div>
+    </div>
+
+    <!-- MENU GLISSANT -->
+    <div class="menuGlissant">
+        <div>
+          <a href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark closebtn"></i></a>
+          <!-- <hr> -->
+          <a class="fr" onclick="closeNav()" href="a-propos.html"><i class="fa-solid fa-question"></i> À PROPOS</a>
+          <a class="en" onclick="closeNav()" href="a-propos.html"><i class="fa-solid fa-question"></i> ABOUT</a>
+
+          <a onclick="closeNav()" href="indexSmartphone.html"><i class="fa-solid fa-bookmark"></i> INDEX </a>
+
+          <a class="fr" onclick="closeNav()" href="personnages.html"><i class="fa-solid fa-hat-cowboy"></i> PERSONNAGES</a>
+          <a class="en" onclick="closeNav()" href="personnages.html"><i class="fa-solid fa-hat-cowboy"></i> CAST</a>
+          
+          <a class="fr" onclick="closeNav()" href="galerie.html"><i class="fa-solid fa-images"></i> GALERIE</a>
+          <a class="en" onclick="closeNav()" href="galerie.html"><i class="fa-solid fa-images"></i> GALLERY</a>
+          
+          <a class="fr" onclick="closeNav()" href="boutique.html"><i class="fa-solid fa-cart-shopping"></i> BOUTIQUE</a>
+          <a class="en" onclick="closeNav()" href="boutique.html"><i class="fa-solid fa-cart-shopping"></i> SHOP</a>
+          <hr>
+        </div>
+        <div class="credits bas">
+          <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>JackPot & Soyouz 2012 - 2022
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footerSmartphone">
+      <div id="aileen">
+        <img src="images/deco/arrow_left_sm.png">
+      </div>
+      <div id="maighread">
+      </div>
+    </div>
+    
+   <!-- javascript Bootstrap -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+ </body>
+ </html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <title>JO - à propos</title>
+    <link rel="shortcut icon" href="images/deco/favicon.ico" type="image/x-icon">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--TYPOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css?ver=6.8.2" type="text/css" media="all">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/apropo.css">
+    <!-- JAVASCRIPT -->
+    <script src="javascript/config.js" defer></script>
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/indexPages.js" defer></script>
+  </head>
+ <!-- BODY -->
+  <body>    
+   <!--MENU LATÉRAL -->
+    <nav>
+      <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>
+
+      <hr>
+
+      <!-- retour début -->
+      <a onclick="(resetIndice())" href="lecture.html"id="lecture"><h2 class="fr"><i id="triangle" class="fa-solid fa-caret-right"></i> DÉBUT</h2><h2 class="en"><i id="triangle" class="fa-solid fa-caret-right"></i> START</h2></a>
+
+      <!-- index pages -->
+      <a id="index" onclick="(index())" href="#listeIndex" data-bs-toggle="collapse" aria-expanded="false" aria-controls="listeIndex">
+        <h2>Index</h2>
+      </a>
+      <div class ="navigationIndex collapse" id="listeIndex">
+        <button id="1" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T1" aria-expanded="false" aria-controls="T1">tome 1</button>
+        
+        <div class="collapse" id="T1">
+            <a href="lecture.html" id="0">couverture</a><br>
+            <a href="lecture.html">01</a> - <a href="lecture.html">02</a> - <a href="lecture.html">03</a> - <a href="lecture.html">04</a> - <a href="lecture.html">05</a><br>
+            <a href="lecture.html">06</a> - <a href="lecture.html">07</a> - <a href="lecture.html">08</a> - <a href="lecture.html">09</a> - <a href="lecture.html">10</a><br>
+            <a href="lecture.html">11</a> - <a href="lecture.html">12</a> - <a href="lecture.html">13</a> - <a href="lecture.html">14</a> - <a href="lecture.html">15</a>
+        </div>
+        
+        <button id="2" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T2" aria-expanded="false" aria-controls="T2">tome 2</button>
+        
+        <div class="collapse" id="T2">
+            <a href="lecture.html" id="16">couverture</a><br>
+            <a href="lecture.html">16</a> - <a href="lecture.html">17</a> - <a href="lecture.html">18</a> - <a href="lecture.html">19</a> - <a href="lecture.html">20</a><br>
+            <a href="lecture.html">21</a> - <a href="lecture.html">22</a> - <a href="lecture.html">23</a> - <a href="lecture.html">24</a> - <a href="lecture.html">25</a><br>
+            <a href="lecture.html">26</a> - <a href="lecture.html">27</a> - <a href="lecture.html">28</a> - <a href="lecture.html">29</a> - <a href="lecture.html">30</a>
+        </div>
+        
+        <button id="3" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T3" aria-expanded="false" aria-controls="T3">tome 3</button>
+        
+          <div class="collapse" id="T3">
+            <a href="lecture.html" id="32">couverture</a><br>            
+            <a href="lecture.html">31</a> - <a href="lecture.html">32</a> - <a href="lecture.html">33</a> - <a href="lecture.html">34</a> - <a href="lecture.html">35</a><br>
+            <a href="lecture.html">36</a> - <a href="lecture.html">37</a> - <a href="lecture.html">38</a> - <a href="lecture.html">39</a> - <a href="lecture.html">40</a><br>
+            <a href="lecture.html">41</a> - <a href="lecture.html">42</a> - <a href="lecture.html">43</a> - <a href="lecture.html">44</a> - <a href="lecture.html">45</a>
+          </div>
+
+        <button id="4" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T4" aria-expanded="false" aria-controls="T4">tome 4</button>
+        
+          <div class="collapse" id="T4">
+            <a href="lecture.html" id="48">couverture</a><br>            
+            <a href="lecture.html">46</a> - <a href="lecture.html">47</a> - <a href="lecture.html">48</a> - <a href="lecture.html">49</a> - <a href="lecture.html">50</a><br>
+            <a href="lecture.html">51</a> - <a href="lecture.html">52</a> - <a href="lecture.html">53</a> - <a href="lecture.html">54</a> - <a href="lecture.html">55</a><br>
+            <a href="lecture.html">56</a> - <a href="lecture.html">57</a> - <a href="lecture.html">58</a> - <a href="lecture.html">59</a> - <a href="lecture.html">60</a>                
+          </div>
+
+        <button id="5" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T5" aria-expanded="false" aria-controls="T5">tome 5</button>
+        
+          <div class="collapse" id="T5">
+            <a href="lecture.html" id="64">couverture</a><br>            
+            <a href="lecture.html">61</a> - <a href="lecture.html">62</a> - <a href="lecture.html">63</a> - <a href="lecture.html">64</a> - <a href="lecture.html">65</a><br>
+            <a href="lecture.html">66</a> - <a href="lecture.html">67</a> - <a href="lecture.html">68</a> - <a href="lecture.html">69</a> - <a href="lecture.html">70</a><br>
+            <a href="lecture.html">71</a> - <a href="lecture.html">72</a> - <a href="lecture.html">73</a> - <a href="lecture.html">74</a> - <a href="lecture.html">75</a>                
+          </div>
+
+        <button id="6" data-bs-toggle="collapse" data-bs-target=".multi-collapse, #T6" aria-expanded="false" aria-controls="T6">tome 6</button>
+        
+          <div class="collapse" id="T6">
+            <a href="lecture.html" id="80">couverture</a><br>            
+            <a href="lecture.html">76</a> - <a href="lecture.html">77</a> - <a href="lecture.html">78</a> - <a href="lecture.html">79</a> - <a href="lecture.html">80</a><br>
+            <a href="lecture.html">81</a> - <a href="lecture.html">82</a> - <a href="lecture.html">83</a> - <a href="lecture.html">84</a> - <a href="lecture.html">85</a><br>
+            <a href="lecture.html">86</a> - <a href="lecture.html">87</a> - <a href="lecture.html">88</a> - <a href="lecture.html">89</a> - <a href="lecture.html">90</a><br>
+            <a href="lecture.html">91</a> - <a href="lecture.html">92</a> - <a href="lecture.html">93</a> - <a href="lecture.html">94</a> - <a href="lecture.html">95</a>
+          </div>          
+      </div>       
+ 
+      <!-- dernier strip vu -->
+      <a href="lecture.html" id="dernierStrip"></a> 
+
+      <hr>
+      
+      <a href="a-propos.html" id="apropo"></a>
+      
+      <a href="personnages.html"id="personnages"></a> 
+ 
+      <a href="galerie.html" id="galerie"></a>
+
+      <a href="boutique.html" id="boutique"></a>
+
+      <div class="credits">
+        <hr>
+        JackPot & Soyouz 2012 - 2022
+      </div>
+    </nav>
+   <!--CONTENU-->
+    <main>
+
+      <!-- RÉSUMÉ -->
+      <h1 class="fr">Résumé</h1>
+      <h1 class="en">Story</h1>
+      <!-- <img src="images/deco/frise_winchester.jpg"> -->
+      <div class="apropo justify fr">
+        <p>
+          Jo, la cowgirl la plus badass de l'Ouest, n'aspire qu'à vivre peinarde avec ses vaches <em>tout-à-fait-normales</em> dans son ranch perdu au milieu de nulle part. Flanquée de sa stagiaire Alex, elle a fort à faire pour se défendre des hors-la-loi et autres OVNIs…
+        </p>
+        <p>
+          Western, comédie et science-fiction : une BD 3-en-1 unique en son genre pour tout public !
+        </p>
+        <p>
+          Histoire complète.
+        </p>
+      </div>
+      <div class="apropo justify en">
+        <p>
+         Jo is a badass cowgirl in the wild, wild west, looking for a peaceful life at her ranch with her <em>perfectly-normal</em> cows. With her intern Alex, she's quite busy avoiding thieves, scum and flying saucers…
+        </p>
+        <p>
+          Western, comedy, and science fiction: a unique comic for everyone!
+        </p>
+        <p>
+          Full story.
+        </p>
+       </div>
+
+       <img src="images/deco/frise_winchester.jpg">
+
+       <div class="apropo justify">
+        <p class="fr">
+          <em>Jo</em> a été initialement publiée en ligne sur <a href="https://jo-webcomic.blogspot.com/" target="_blank">Blogspot</a>, <a href="https://www.deviantart.com/jackpot-comics/gallery/39492046/jo-strips" target="_blank">Deviantart</a> et <a href="https://www.webtoons.com/fr/challenge/jo/list?title_no=452676" target="_blank">Webtoon</a> entre 2012 et 2021. Une version papier auto-éditée est disponible en VPC dans la <a href="boutique.html" target="_blank">boutique</a>.
+        </p>
+        <p class="en">
+          <em>Jo</em> was originally published online on <a href="https://jo-webcomic.blogspot.com/" target="_blank">Blogspot</a>, <a href="https://www.deviantart.com/jackpot-comics/gallery/39492046/jo-strips" target="_blank">Deviantart</a> and <a href="https://www.webtoons.com/fr/challenge/jo/list?title_no=452676" target="_blank">Webtoon</a> from 2012 to 2021. A self-published books version is available for mail order in the <a href="boutique.html" target="_blank">shop</a>.
+        </p>
+       </div>
+
+      <!-- CRÉDITS -->
+      <h1 class="fr" >Crédits</h1>
+      <h1 class="en" >Credits</h1>
+      <!-- <img id="nous" src="images/deco/NOUS.png"> -->
+      <img id="nous" src="images/deco/josgang.jpg">
+      <div class="autrices">
+        <div>
+          <h2><a href="https://jackpot.carrd.co/" target="_blank">
+            JackPot
+          </a></h2>
+          <div class="fr">idée originale et dessin</div>
+          <div class="en">original idea and artwork</div>
+           <div>
+             <a href="https://instagram.com/jackpot_comics/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+             <a href="http://jackpot-84.deviantart.com/" title="Deviantart"><i class="fa-brands fa-deviantart"></i></a>
+             <a href="https://www.twitch.tv/jackpot_comics" title="Twitch"><i class="fa-brands fa-twitch"></i></a>
+             <a href="https://www.patreon.com/jackpot_comics" title="Patreon"><i class="fa-brands fa-patreon"></i></a>
+           </div>
+        </div>
+        <div>
+          <h2>
+            <a href="https://soyouzaldrin.carrd.co/" target="_blank">
+              Soyouz
+            </a>
+          </h2>
+          <div class="fr">scénario</div>
+          <div class="en">script</div>
+          <div>
+            <a href="https://www.instagram.com/soyouz_aldrin/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://madeofplasma.tumblr.com/" title="Tumblr"><i class="fa-brands fa-tumblr"></i></a>
+            <a href="https://bsky.app/profile/soyouz.bsky.social" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            <a href="https://www.patreon.com/cringefest" title="Patreon"><i class="fa-brands fa-patreon"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="autrices">
+        <div>
+          <h3><a href="https://linktr.ee/dr.t.pralinus" target="_blank">
+            Pralinus
+          </a></h3>
+          <div class="fr">scénario du spin-off alternatif</div>
+          <div class="en">alternative spin-off script</div>
+          <div class="bridget">
+            <a target="_blank" href="https://atjc-webcomic.blogspot.com/">
+              <img alt = "ATJC" title = "Amour, Tractions et Joints de culasse" src="images/deco/atjc.png">
+            </a>
+          </div>
+        <em class="fr warning">! contrairement à Jo, cette BD contient des scènes de sexe eplicites et n'est donc pas pour tout public !</em>
+        <em class="en warning">!unlike Jo, this comic contains explicit sex scenes and is therefore not suitable for all audiences!</em>          
+        </div>
+      </div>
+      <div class="apropo">
+        <p class="fr">
+          Traduction anglaise : <span>Héloïse Baillet</span> et <span>Hélène Lenoir</span>
+        </p>
+        <p class="en">
+          English translation : <span>Héloïse Baillet</span> and <span>Hélène Lenoir</span>
+        </p>
+         <p class="fr">
+           Avec la participation de Anne Guéro et Rutile ! Merci pour vos précieux conseils et suggestions.
+         </p>
+         <p class="en">
+           Special thanks to Anne Guéro and Rutile for their precious writing advices!
+         </p>
+      </div>      
+      <!-- LIENS -->
+      <h1 class="fr" >Liens</h1>
+      <h1 class="en">Links</h1>      
+      <div class="apropo">
+        <span class="fr">Les BDs de Soyouz</span>
+        <span class="en">Soyouz webcomics</span>
+        <div class="bridget">
+          <a class="fr" target="_blank"href="https://tapas.io/series/Une-Couronne-de-Pissenlits/">
+            <img alt = "pissenlits" title = "Une couronne de pissenlits" src="images/deco/pissenlits.png">
+          </a>
+          <a class="en" target="_blank"href="https://tapas.io/episode/2999017">
+            <img alt = "pissenlits" title = "A wreath of dandelions" src="images/deco/dandelions.png">
+          </a>
+          <a target="_blank" href="https://www.webtoons.com/fr/challenge/cringefest/list?title_no=661929">
+            <img alt = "Cringefest" title = "Cringefest" src="images/deco/cringefest.png">
+           </a>
+           <a target="_blank" href="http://cockroach-inc.blogspot.fr/">
+             <img alt = "the Cockroach, inc" title= "the Cockroach, inc" src="images/deco/cockroach.jpg">
+           </a>
+        </div>
+      </div>
+       <img src="images/deco/frise_winchester.jpg">
+    <span class="fr">De chouettes BDs à découvrir</span>
+    <span class="en">Other cool webcomics</span>
+      <div class="bridget">
+         <a target="_blank" href="https://valeriane.org/ivlm/ici-vont-les-morts/lundi-la-couverture">
+           <img alt="Ici vont les morts" title="Ici vont les morts" src="https://klaimsden.net/jackpot/jo/links/icivontlesmorts.jpg">
+         </a>
+         <a target="_blank" href="https://www.amilova.com/fr/BD-manga/2194/b4ng.html">
+           <img alt = "B4ng!" title = "B4ng!" src="images/deco/B4anniere.jpg">
+         </a>
+         <a target="_blank" href="https://www.webtoons.com/fr/challenge/fangs-and-frights/list?title_no=677728">
+           <img alt = "fangs and frights" title = "Fangs and Frights" src="https://klaimsden.net/jackpot/jo/links/fangs_and_frights.jpg">
+         </a>
+         <a target="_blank" href="https://tapas.io/series/Cuirassees/">
+           <img alt = "Cuirassées" title="Cuirassées" src="https://klaimsden.net/jackpot/jo/links/ecorchees.jpg">
+         </a>
+         <a target="_blank" href="https://www.webtoons.com/en/challenge/plumes/list?title_no=402050">
+           <img alt = "Plumes" title = "Plumes" src="https://klaimsden.net/jackpot/jo/links/plumes.jpg">
+         </a>
+      </div>
+
+
+    </main>
+
+    <div id="image2fond"></div>
+    
+    <!--FOOTER-->
+    <footer>
+      <div class="fr">
+        <img src="images/deco/fr-circular.png">
+        <a href="https://www.webtoons.com/fr/challenge/jo/list?title_no=452676"><img src="images/deco/webtoon-icon.png"></a>
+      </div>
+      <div class="en">
+        <img src="images/deco/uk-circular.png">
+        <a href="https://tapas.io/series/jo-webcomic"><img src="images/deco/tapas-icon.png"></a>        
+        <a href="https://www.webtoons.com/en/challenge/jo/list?title_no=393890"><img src="images/deco/webtoon-icon.png"></a>
+      </div>      
+    </footer>
+    <!-- MENU SMARTPHONE -->
+    <div class="menuSmartphone">
+      <div>
+        <i onclick="openNav()" class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-question actuel"></i>
+      </div>
+      <div class="droite">
+        <div>
+          <a class="fr" href="lecture.html">retour lecture</a>
+          <a class="en" href="lecture.html">back to strips</a>
+        </div>
+        <a href="index.html"><img class="fr" src="images/deco/fr-circular.png"></a>
+        <a href="index.html"><img class="en" src="images/deco/uk-circular.png"></a>
+      </div>  
+    </div>  
+
+    <!-- MENU GLISSANT -->
+    <div class="menuGlissant">
+        <div>
+          <a href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark closebtn"></i></a>
+          <a onclick="closeNav()" href="a-propos.html"><i class="fa-solid fa-question actuel"></i> À PROPOS</a>
+          <a onclick="closeNav()" href="indexSmartphone.html"><i class="fa-solid fa-bookmark"></i> INDEX </a>
+          <a onclick="closeNav()" href="personnages.html"><i class="fa-solid fa-hat-cowboy"></i> PERSONNAGES</a>
+          <a onclick="closeNav()" href="galerie.html"><i class="fa-solid fa-images"></i> GALERIE</a>
+          <a onclick="closeNav()" href="boutique.html"><i class="fa-solid fa-cart-shopping"></i> BOUTIQUE</a>
+          <hr>
+        </div>
+        <div class="credits bas">
+          <a href="index.html"><img class="logo" src="images/deco/logo_menu.png"></a>JackPot & Soyouz 2012 - 2022
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+ </body>
+ </html>
